@@ -1,4 +1,61 @@
 body {
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
+    background: red;
+    height: 200vh;
+}
+
+/* header */
+
+nav.menu {
+    display: flex;
+    justify-content: space-between;  
+    border-bottom: 1px solid black;  
+    background: #d0d0d0;
+    position: static;
+}
+
+.links {
+    margin-right: 10px;
+}
+
+.menu a {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.links a:last-child {
+    border-right: 0px;
+}
+
+/* Guy section */
+.guy {
+    height: 100vh;
+    background-image: url('../images/guy.jpeg');
+    background-size: cover;
+    display: grid;
+}
+
+.guy-container {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Work section */
+.content-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.content-box {
+    padding: 0 10px;
+}
+.content-box .content-image {
+    background-image: url('../images/guy-fieiri-flame.jpg');
+    background-size: cover;
+    height: 250px;
 }
